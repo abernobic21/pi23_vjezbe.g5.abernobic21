@@ -74,6 +74,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repozitories\ActivityRepository.cs" />
+    <Compile Include="Repozitories\TeacherRepository.cs" />
     <Compile Include="Repozitories\StudentRepository.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
