@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FtmEvaluation.cs">
+    <Compile Include="FrmEvaluation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FtmEvaluation.Designer.cs">
-      <DependentUpon>FtmEvaluation.cs</DependentUpon>
+    <Compile Include="FrmEvaluation.Designer.cs">
+      <DependentUpon>FrmEvaluation.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmStudents.cs">
       <SubType>Form</SubType>
@@ -81,8 +81,8 @@
     <EmbeddedResource Include="FrmStudents.resx">
       <DependentUpon>FrmStudents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FtmEvaluation.resx">
-      <DependentUpon>FtmEvaluation.cs</DependentUpon>
+    <EmbeddedResource Include="FrmEvaluation.resx">
+      <DependentUpon>FrmEvaluation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

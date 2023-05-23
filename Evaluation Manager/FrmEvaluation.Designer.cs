@@ -1,6 +1,6 @@
 ﻿namespace Evaluation_Manager
 {
-    partial class FtmEvaluation
+    partial class FrmEvaluation
     {
         /// <summary>
         /// Required designer variable.
@@ -54,6 +54,7 @@
             this.cboActivities.Name = "cboActivities";
             this.cboActivities.Size = new System.Drawing.Size(250, 24);
             this.cboActivities.TabIndex = 0;
+            this.cboActivities.SelectedIndexChanged += new System.EventHandler(this.cboActivities_SelectedIndexChanged);
             // 
             // numPoints
             // 
@@ -105,18 +106,19 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(659, 396);
+            this.btnCancel.Location = new System.Drawing.Point(656, 396);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(78, 23);
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Odustani";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(560, 396);
+            this.btnSave.Location = new System.Drawing.Point(553, 396);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(82, 23);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Spremi";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -129,7 +131,6 @@
             this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 13;
             this.label1.Text = "Aktivnost:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -139,7 +140,6 @@
             this.label2.Size = new System.Drawing.Size(98, 16);
             this.label2.TabIndex = 14;
             this.label2.Text = "Uvjet za potpis:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -149,7 +149,6 @@
             this.label3.Size = new System.Drawing.Size(101, 16);
             this.label3.TabIndex = 15;
             this.label3.Text = "Uvjet za ocjenu:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -168,7 +167,6 @@
             this.label5.Size = new System.Drawing.Size(114, 16);
             this.label5.TabIndex = 17;
             this.label5.Text = "Datum evaluacije:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -178,9 +176,8 @@
             this.label6.Size = new System.Drawing.Size(53, 16);
             this.label6.TabIndex = 18;
             this.label6.Text = "Bodovi:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // FtmEvaluation
+            // FrmEvaluation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -202,8 +199,9 @@
             this.Controls.Add(this.numPoints);
             this.Controls.Add(this.cboActivities);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name = "FtmEvaluation";
+            this.Name = "FrmEvaluation";
             this.Text = "FrmEvaluation";
+            this.Load += new System.EventHandler(this.FrmEvaluation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numPoints)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,5 +1,6 @@
 ﻿using DBLayer;
 using Evaluation_Manager.Models;
+using Evaluation_Manager.Repozitories;
 
 using System;
 using System.Collections.Generic;
@@ -31,7 +32,8 @@ namespace Evaluation_Manager.Repozitories
 
         public static List<Activity> GetActivities()
         {
-            List<Activity> activities = null;
+            List<Activity> activities = new List<Activity>();
+
             string sql = "SELECT * FROM Activities";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
