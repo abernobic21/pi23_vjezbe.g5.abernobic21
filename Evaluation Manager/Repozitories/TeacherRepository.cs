@@ -14,7 +14,7 @@ namespace Evaluation_Manager.Repozitories
     {
         public static Teacher GetTeacher(string username)
         {
-            string sql = $"SELECT * FROM Teachers WHERE Username = {username}";
+            string sql = $"SELECT * FROM Teachers WHERE Username = '{username}'";
             return FetchTeacher(sql);
         }
 
