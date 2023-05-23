@@ -29,15 +29,13 @@ namespace Evaluation_Manager.Repozitories
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             Teacher teacher = null;
-
-            if (reader.HasRows)
+            if (reader.HasRows == true)
             {
                 reader.Read();
                 teacher = CreateObject(reader);
                 reader.Close();
             }
             DB.CloseConnection();
-
             return teacher;
         }
 

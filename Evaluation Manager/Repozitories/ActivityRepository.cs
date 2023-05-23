@@ -16,7 +16,7 @@ namespace Evaluation_Manager.Repozitories
         public static Activity GetActivity(int id)
         {
             Activity activity = null;
-            string sql = $"SELECT * FROM Activities WHER Id = {id}";
+            string sql = $"SELECT * FROM Activities WHERE Id = {id}";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             if (reader.HasRows)
@@ -25,10 +25,10 @@ namespace Evaluation_Manager.Repozitories
                 activity = CreateObject(reader);
                 reader.Close();
             }
-
             DB.CloseConnection();
             return activity;
         }
+
 
         public static List<Activity> GetActivities()
         {
